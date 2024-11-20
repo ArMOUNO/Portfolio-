@@ -4,7 +4,7 @@ import { AiTwotoneAppstore } from "react-icons/ai";
 import { SiAntdesign } from "react-icons/si";
 import { BiCodeAlt } from "react-icons/bi";
 import ServicesCard from "./ServicesCard";
-// import { SiPushbullet } from "react-icons/si";
+
 const MyServices = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
@@ -12,13 +12,13 @@ const MyServices = () => {
         icons={<BiCodeAlt />}
         title="KUET Welfare Social Media "
         subTitle={<div className="flex flex-col items-start">
-        {/* <p><SiPushbullet />-Post with picture/Video on News feed </p>
-        <p><SiPushbullet />-Tag people</p>
-        <p><SiPushbullet />-Also enable Notification </p>
-        <p><SiPushbullet />-Edit Delete Options</p>
-        <p><SiPushbullet />-Like comment option</p>
-        <p><SiPushbullet />-Another Job post feed for do job post like linkedin</p>
-        <p><SiPushbullet />-Apply option</p> */}
+        <p>-Post with picture/Video on News feed </p>
+        <p>-Tag people</p>
+        <p>-Also enable Notification </p>
+        <p>-Edit Delete Options</p>
+        <p>-Like comment option</p>
+        <p>-Another Job post feed for do job post like linkedin</p>
+        <p>-Apply option</p>
         
         </div>}
       />
