@@ -32,3 +32,13 @@
     @apply text-textColor border-b-[1px] border-b-zinc-500 py-4 text-base hover:text-designColor duration-300
   }
 }
+@keyframes fadeOut {
+  
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-out {
+  animation: fadeOut 3s ease-in-out forwards;
+  animation-delay: 2s;
+}

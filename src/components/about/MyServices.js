@@ -4,14 +4,23 @@ import { AiTwotoneAppstore } from "react-icons/ai";
 import { SiAntdesign } from "react-icons/si";
 import { BiCodeAlt } from "react-icons/bi";
 import ServicesCard from "./ServicesCard";
-
+// import { SiPushbullet } from "react-icons/si";
 const MyServices = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <ServicesCard
         icons={<BiCodeAlt />}
-        title="Web Development"
-        subTitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident. Accusamus at dolorem expedita dicta."
+        title="KUET Welfare Social Media "
+        subTitle={<div className="flex flex-col items-start">
+        {/* <p><SiPushbullet />-Post with picture/Video on News feed </p>
+        <p><SiPushbullet />-Tag people</p>
+        <p><SiPushbullet />-Also enable Notification </p>
+        <p><SiPushbullet />-Edit Delete Options</p>
+        <p><SiPushbullet />-Like comment option</p>
+        <p><SiPushbullet />-Another Job post feed for do job post like linkedin</p>
+        <p><SiPushbullet />-Apply option</p> */}
+        
+        </div>}
       />
       <ServicesCard
         icons={<SiAntdesign />}

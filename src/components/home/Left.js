@@ -10,7 +10,7 @@ import { bannerImg } from "../../assets/index";
 
 const Left = () => {
   const [text] = useTypewriter({
-    words: ["Web Developer", "Full Stack Developer", "UI Designer"],
+    words: ["Web Developer"],
     loop: true,
     typeSpeed: 30,
     deleteSpeed: 20,
@@ -28,30 +28,40 @@ const Left = () => {
       </div>
       <div className="w-full h-2/5 flex flex-col justify-between border-t-0 rounded-bl-xl rounded-br-xl">
         <div className="flex flex-col items-center gap-2 py-10">
-          <h1 className="text-textColor text-4xl font-semibold">John Doe</h1>
+          <h1 className="text-textColor text-4xl font-semibold">
+            Abu Rayhan Mouno
+          </h1>
           <p className="text-base text-designColor tracking-wide">
             {text}
             <Cursor cursorBlinking="false" cursorStyle="|" />
           </p>
           <div className="flex justify-center gap-2 mt-2">
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
-              <FaGithub />
-            </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
-              <FaLinkedin />
-            </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
-              <SiYoutubemusic />
-            </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
-              <BsFacebook />
-            </span>
+            <a target="blank" href="https://github.com/ArMOUNO">
+              <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+                <FaGithub />
+              </span>
+            </a>
+            <a
+              target="blank"
+              href="https://www.linkedin.com/in/abu-rayhan-mouno-100and18"
+            >
+              <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+                <FaLinkedin />
+              </span>
+            </a>
+            <a target="blank" href="https://www.facebook.com/ar.mouno">
+              {" "}
+              <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+                <BsFacebook />
+              </span>
+            </a>
+
             <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
               <FiInstagram />
             </span>
-            <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
+            {/* <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
               <AiFillTwitterCircle />
-            </span>
+            </span> */}
             <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
               <FiMail />
             </span>
@@ -64,11 +74,11 @@ const Left = () => {
             className="w-1/2 border-t-[1px] borderRight border-t-zinc-800 text-sm tracking-wide uppercase  gap-2 hover:text-designColor duration-300"
             rel="noreferrer"
           >
-            <button className="w-full h-full flex justify-center items-center gap-2">
+            <button className="w-full h-full flex justify-center items-center p-2 gap-2">
               Download CV <BsCloudLightningFill />
             </button>
           </a>
-          <button className="w-1/2 border-t-[1px] border-t-zinc-800 text-sm tracking-wide uppercase flex justify-center items-center gap-2 hover:text-designColor duration-300">
+          <button className="w-1/2 border-t-[1px] p-2 border-t-zinc-800 text-sm tracking-wide uppercase flex justify-center items-center gap-2 hover:text-designColor duration-300">
             Contact me <FiSend />
           </button>
         </div>
